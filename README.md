@@ -12,9 +12,10 @@ And you should be good to go! Feel free to fork and submit pull requests.
 
 ## Environment variables
 
-| Name    | Description                              |
-| ------- | ---------------------------------------- |
-| `MONGO` | URL of the mongo database                |
-| `PORT`  | Port to run server on (defaults to 1337) |
+| Name                   | Description                              |
+| ---------------------- | ---------------------------------------- |
+| `MONGO`                | URL of the mongo database                |
+| `PORT`                 | Port to run server on (defaults to 1337) |
+| `TWITTER_BEARER_TOKEN` | Twitter API bearer token                 |
 
 Also, please, consider looking at `.env.sample`.
