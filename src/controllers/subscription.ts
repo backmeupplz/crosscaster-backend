@@ -1,4 +1,4 @@
-import { Body, Controller, Ctx, Delete, Get, Params, Post } from 'amala'
+import { Body, Controller, Ctx, Delete, Get, Post, Query } from 'amala'
 import { Context } from 'koa'
 import { SubscriptionModel } from '@/models/Subscription'
 import { badRequest } from '@hapi/boom'
@@ -10,7 +10,7 @@ import farcasterRegistry from '@/helpers/farcasterRegistry'
 @Controller('/subscription')
 export default class SetupController {
   @Get('/')
-  get(@Params({ required: true }) { mnemonic }: Mnemonic) {
+  get(@Query({ required: true }) { mnemonic }: Mnemonic) {
     return SubscriptionModel.findOne({ mnemonic })
   }
 
@@ -33,7 +33,7 @@ export default class SetupController {
   }
 
   @Delete('/')
-  delete(@Params({ required: true }) { mnemonic }: Mnemonic) {
+  delete(@Query({ required: true }) { mnemonic }: Mnemonic) {
     return SubscriptionModel.findOneAndDelete({ mnemonic })
   }
 }
