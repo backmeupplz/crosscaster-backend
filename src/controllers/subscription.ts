@@ -10,8 +10,8 @@ import farcasterRegistry from '@/helpers/farcasterRegistry'
 @Controller('/subscription')
 export default class SetupController {
   @Get('/')
-  get(@Query({ required: true }) { mnemonic }: Mnemonic) {
-    return SubscriptionModel.findOne({ mnemonic })
+  async get(@Query({ required: true }) { mnemonic }: Mnemonic) {
+    return (await SubscriptionModel.findOne({ mnemonic })) || {}
   }
 
   @Post('/')
