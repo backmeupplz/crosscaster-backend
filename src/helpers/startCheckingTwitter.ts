@@ -30,7 +30,9 @@ async function checkTwitter() {
         // Cast new tweets
         for (const tweet of newTweets) {
           try {
-            console.log(`Casting tweet ${tweet.id} from ${tweet.author_id}`)
+            console.log(
+              `Casting tweet ${tweet.id} from ${subscription.twitterUsername}`
+            )
             await cast(subscription.mnemonic, tweet.text)
           } catch (errorCasting) {
             console.error(errorCasting)
