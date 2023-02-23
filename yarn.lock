@@ -1353,14 +1353,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@standard-crypto/farcaster-js@npm:^4.0.0":
-  version: 4.0.0
-  resolution: "@standard-crypto/farcaster-js@npm:4.0.0"
+"@standard-crypto/farcaster-js@npm:^5.5.2":
+  version: 5.5.2
+  resolution: "@standard-crypto/farcaster-js@npm:5.5.2"
   dependencies:
-    axios: ~1.1.3
+    axios: ~1.3.3
     canonicalize: ^1.0.8
     ethers: ^5.7.1
-  checksum: fbe47ad4a88514db303f48516f8493b4a03892322374297846e4df4ad685418f844fe40163ebb34fa150eb2b06fa37d72e60d05dd13f1cd6a9dec1d385987779
+  checksum: f15bbc161471fab740671e21e89291670bdadd24e1968094a1f877a420a477e9f6a474256ba7540548aa21792814bffb061b5f349917b6067d81014d3b192ab5
   languageName: node
   linkType: hard
 
@@ -1889,14 +1889,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"axios@npm:~1.1.3":
-  version: 1.1.3
-  resolution: "axios@npm:1.1.3"
+"axios@npm:~1.3.3":
+  version: 1.3.4
+  resolution: "axios@npm:1.3.4"
   dependencies:
     follow-redirects: ^1.15.0
     form-data: ^4.0.0
     proxy-from-env: ^1.1.0
-  checksum: cab3b17bf6092c9387f7023d699db093cfa23650b56c4422cd474d124b78b2e3b5a520f932c330664a58ab85b867b1c25a95cace475ef72d236888c852b84e6d
+  checksum: 7440edefcf8498bc3cdf39de00443e8101f249972c83b739c6e880d9d669fea9486372dbe8739e88b3bf8bb1ad15f6106693f206f078f4516fe8fd47b1c3093c
   languageName: node
   linkType: hard
 
@@ -2200,7 +2200,7 @@ __metadata:
   dependencies:
     "@hapi/boom": ^10.0.0
     "@koa/cors": ^4.0.0
-    "@standard-crypto/farcaster-js": ^4.0.0
+    "@standard-crypto/farcaster-js": ^5.5.2
     "@typegoose/typegoose": ^9.13.2
     "@types/koa": ^2.13.5
     "@types/koa-bodyparser": ^4.3.10

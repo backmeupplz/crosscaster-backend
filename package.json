@@ -17,7 +17,7 @@
   "dependencies": {
     "@hapi/boom": "^10.0.0",
     "@koa/cors": "^4.0.0",
-    "@standard-crypto/farcaster-js": "^4.0.0",
+    "@standard-crypto/farcaster-js": "^5.5.2",
     "amala": "^8.0.2",
     "dotenv": "^16.0.3",
     "envalid": "^7.3.1",
